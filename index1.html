@@ -1,8 +1,8 @@
 <a href="index.html">index</a>
 this is my second index.html file
-<input type="text" value="" onchange="capture(this)" />
+<input type="text" value="" onkeyup="capture(this)" />
 <script>
-    function capture(value) {
-        console.log(value)
+    function capture(thisVal) {
+        console.log(thisVal.value)
     };
 </script>
