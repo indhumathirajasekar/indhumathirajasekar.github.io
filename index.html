@@ -57,9 +57,9 @@
             </style>
             <title>Hello World</title>
             <style>
-                head
-                    nav
-                        section
+                header,
+                    nav,
+                        section,
                             footer{
                                    background: grey;
                                    border-radius:7px;
@@ -72,7 +72,21 @@
 
 
                             }
-            </style>
+                            header:before,
+                            nav:before,
+                            section:before,
+                            footer:before {
+                            content:'<';
+                        }
+                            header:after,
+                            nav:after,
+                            section:after,
+                            footer:after{
+                            content:'>';
+                            }
+             </style>
+             </head>
+             <body>
             <style>
                h1 {
                    background-color:aqua;
@@ -87,6 +101,5 @@
     }
 </style>
 <p style="color:yellowgreen;"> This is my first paragraph</p>
-            
-        </head>
+             </body>
     </html>
