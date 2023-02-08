@@ -36,6 +36,20 @@
         section h2:first-child, aside h2:first-child {
             margin-top: 0;
         }
+        .course-progress li {
+            list-style: none;
+        }
+        .course-progress li:before {
+            content: '✓';
+            padding-right: 5px;
+            color: yellowgreen;
+        }
+        .course-progress li:nth-child(2):before {
+            color: black;
+        }
+        .course-progress li:nth-child(3):before {
+            color: burlywood;
+        }
     </style>
     <link rel="stylesheet" href="special.css">
     <title>My Resume</title>
@@ -67,7 +81,14 @@
                 <li>Effective Substitute Teacher Training
                     Wake County ,North Carolina • 01/2022
                     Master of Science Mathematics. </li>
-                <li>web programming HTML, CSS, Javascript- Expected may, 2023</li>
+                <li>Web programming HTML, CSS, Javascript - Expected to complete the course on may 2023
+                    <h3 style="margin: 10px; font-size: 1em; margin-left: 25px; ">Course Progress</h3>
+                    <ul class="course-progress">
+                        <li>HTML - Done</li>
+                        <li>CSS - In-Progress</li>
+                        <li>JavaScript - Not Started</li>
+                    </ul>
+                </li>
             </ul>
 
             <h2> Hobbies</h2>
