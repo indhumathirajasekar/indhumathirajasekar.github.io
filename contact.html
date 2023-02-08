@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang=""en>
-    <head>
-        <title> Contact us!</title>
-    </head>
-    <body>
-        <form action="#" method="get">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="username"> Desired User Name:</label>
-                <input id="username" name:" usename" type="text"> 
-                <label for="password">Desired Password:</label>
-                <input id="password" name:"password" type="text">
-                <label for="Start date"> Start date:</label>
-                <input id="Sart date" name="Start date" type="text">
-             </fieldset>
-        </form>
-    </body>
+<html lang="" en>
+
+<head>
+    <title> Contact us!</title>
+    <style>
+        form input:invalid {
+            background-color: rgba(128, 128, 128, 0.184);
+        }
+
+        form input:valid {
+            background-color: rgba(127, 255, 212, 0.168);
+
+        }
+        form ul{
+            list-style-type:none;
+            width: 25rem;
+        }
+        form ul>li{
+            display:flex;
+            flex-direction: column;
+        }
+        form ul>li>input{
+            justify-self: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="#" method="get" id="formone">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <ul>
+                <li><label for="username"> Desired User Name:</label></li>
+                <input id="username" name="username" type="text">
+                <li><label for="password">Desired Password:</label></li>
+                <input id="password" name="password" type="text">
+                <li><label for="Start date"> Start date:</label></li>
+                <input id="Start date" name="Start date" type="date">
+            </ul>
+        </fieldset>
+        <label for="contactpreference"> Please Contact me</label>
+        <datalist name="contactpreference" id="contactpreference" multiple>
+            <option value="yes"></option>
+            <option value="no"></option>
+        </datalist>
+        <input type="text" list="contactpreference" name="mycontactpreference">
+
+
+    </form>
+
+    <button type="submit" form="formone"> Send the date</button>
+</body>
+
 </html>
