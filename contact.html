@@ -3,6 +3,16 @@
 
 <head>
     <title> Contact us!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/darkTheme.css">
+    <link rel="stylesheet" href="css/style.css">
     <style>
         form input:invalid {
             background-color: rgba(128, 128, 128, 0.184);
@@ -10,47 +20,94 @@
 
         form input:valid {
             background-color: rgba(127, 255, 212, 0.168);
+            padding-left: .25em;
 
         }
-        form ul{
-            list-style-type:none;
+
+        form ul {
+            background-color: #bebal5;
+            border: 1px outset #77623f;
+            border-radius: .5em;
+            box-shawdow: 2px 2px .5rem #beb1a5;
+            margin: 10px auto;
+            color: #30291d;
+            padding: 2em;
+            font-weight: bolder;
+            list-style-type: none;
             width: 25rem;
         }
-        form ul>li{
-            display:flex;
+
+        form ul>li {
+            display: flex;
             flex-direction: column;
-        }
-        form ul>li>input{
-            justify-self: left;
+            margin-top: .5em;
         }
 
+        form ul>li>input {
+            justify-self: left;
+            border: 0;
+            border-bottom: 1px #beb1a5 outset;
+            line-height: 2em;
+            background-image: url('images/pencil.svg');
+            background-repeat: no-repeat;
+            background-position-y: center;
+            padding-left: 1.75em;
+
+
+        }
+
+        text area {
+            width: 100%;
+            height: 15px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            resize: none;
+
+        }
+
+        form botton {
+            border=1px outset #77623f;
+            padding: 1em;
+            align-self: stretch;
+            margin-top: 2em;
+        }
     </style>
 </head>
 
 <body>
-    <form action="#" method="get" id="formone">
-        <fieldset>
-            <legend>Personal Information</legend>
-            <ul>
-                <li><label for="username"> Desired User Name:</label></li>
-                <input id="username" name="username" type="text">
-                <li><label for="password">Desired Password:</label></li>
-                <input id="password" name="password" type="text">
-                <li><label for="Start date"> Start date:</label></li>
-                <input id="Start date" name="Start date" type="date">
-            </ul>
-        </fieldset>
-        <label for="contactpreference"> Please Contact me</label>
-        <datalist name="contactpreference" id="contactpreference" multiple>
-            <option value="yes"></option>
-            <option value="no"></option>
-        </datalist>
-        <input type="text" list="contactpreference" name="mycontactpreference">
+
+    <header>
+        <h1><a href="/" Indhumathi Rajasekar </a></h1>
+    </header>
+    <main>
+        <aside>
+
+            <form action="#" method="get" id="formone">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <ul>
+                        <li><label for="username"> Desired User Name:</label></li>
+                        <input id="username" name="username" type="text">
+                        <li><label for="password">Desired Password:</label></li>
+                        <input id="password" name="password" type="text">
+                        <li><label for="Start date"> Start date:</label></li>
+                        <input id="Start date" name="Start date" type="date">
+                    </ul>
+                </fieldset>
+                <label for="contactpreference"> Please Contact me</label>
+                <datalist name="contactpreference" id="contactpreference" multiple>
+                    <option value="yes"></option>
+                    <option value="no"></option>
+                </datalist>
+                <input type="text" list="contactpreference" name="mycontactpreference">
 
 
-    </form>
+            </form>
 
-    <button type="submit" form="formone"> Send the date</button>
+            <button type="submit" form="formone"> Send the date</button>
 </body>
 
 </html>

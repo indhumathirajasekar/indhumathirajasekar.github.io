@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+/* 
+   Mobile phone settings  --- <320px
+*/
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+li, nav li a{
+    background-color: #1b5ac05d;
+    color: rgba(223, 207, 207, 0.441);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 1.5em;
+    padding: 2em;
+    
+}
+li{
+    border: inset rgb(198, 198, 231) 2px;
+    margin-bottom: 1.5em;
+}
+
+/* Table size */
