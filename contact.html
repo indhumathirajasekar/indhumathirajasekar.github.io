@@ -68,7 +68,7 @@
 
         }
 
-        form botton {
+        form button {
             border: 1px outset #77623f;
             padding: 1em;
             align-self: stretch;
@@ -89,12 +89,18 @@
                 <fieldset>
                     <legend>Personal Information</legend>
                     <ul>
-                        <li><label for="username"> Desired User Name:</label></li>
-                        <input id="username" name="username" type="text">
-                        <li><label for="password">Desired Password:</label></li>
-                        <input id="password" name="password" type="text">
+                        <li><label for="username">User Name:</label>
+                            <input id="username" name="username" type="text">
+                        </li>
+                        <li><label for="E mail">E mail:</label>
+                            <input id="email" name="email" type="email" required>
+                        </li>
                         <li><label for="Start date"> Start date:</label></li>
-                        <input id="Start date" name="Start date" type="date">
+                            <textarea id="Start date" name="Start date"></textarea>
+                        </li>
+                        <li> <button type="submit">Send your question</button></li>
+                        <hr>
+                        <span> <img src="images/pencil.svg"> indicates required field</span>
                     </ul>
                 </fieldset>
                 <label for="contactpreference"> Please Contact me</label>
