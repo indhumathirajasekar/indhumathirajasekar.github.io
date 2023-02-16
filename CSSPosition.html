@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> MY CSSPOSITION</title>
+        <title>My title</title>
+        
         <style>
-            #one{
-                background-color:aquamarine;
-                color:beige;
-
+            #one {
+              
+              background-color: aqua;  
+              color:white;
             }
+
             #two{
-                 background-color:blue;
-                 color:azure;
-                 position:static;
+                
+                background-color: rgb(231, 220, 241);
+                color:white;
+                border-radius: 50%;
             }
-            #three{
-                background-color:blueviolet;
-                color:antiquewhite;
 
+            #three{
+                
+                background-color: rgb(227, 202, 202);
+                color:white;
             }
+
+            section{
+                display: inline-block;
+                padding:10px;
+                margin:10px;
+                width:100px;
+                height:100px;
+            }
+
+            main{
+                padding:10%;
+                display:flex;
+                flex-direction: row;
+            }
+
+            .fancyHeadline
+            {
+                
+                border:1px solid black;
+                color:black;
+                background-color: blue;
+            }
+
+            .left_col{
+                flex-shrink: 0;
+                flex-basis:120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+            }
+            .right_col{
+               flex-shrink: auto;
+            }
+
+            .FirstText{
+                font-weight: bolder;
+                font-size: larger;
+            }
+
         </style>
     </head>
     <body>
-        <h1> This is my heading</h1>
-        <section>
-            <h1 id="one">One</h1>
-        </section>
-        <section>
-            <h1 id="two"> two</h1>
-        </section>
-        <section>
-            <h1 id="three">three</h1>
-        </section>
+        <header>
+            <h1>This is my headline</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Link 1</a></li>
+                    <li><a href="index.html">Link 2</a></li>
+                    <li><a href="index.html">Link 3</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="left_col">
+                <section  id="one"> 
+                    <h1>One</h1>
+                </section>
+                <section id="two">
+                    <h1 class="fancyHeadline">Chat now!</h1>
+                </section>
+                <section id="three">
+                    <h1>Three</h1>
+                </section>
+            </div>
+
+            <div class="right_col">
+            <p> <a href="index.html"><span class="FirstText">Lorem ipsum</span></a> dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.</p>
+      
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quas dolores, quos corporis quis dignissimos tempore harum non sint expedita soluta aliquam iste veritatis necessitatibus neque labore aspernatur! Praesentium, exercitationem? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, distinctio. Numquam ducimus minus, libero nemo molestias cum exercitationem repudiandae culpa quia blanditiis consequuntur nihil similique tempore alias repellendus beatae dolorem?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis perferendis optio voluptates, ipsam minima eveniet ratione explicabo hic inventore, dolorem quasi. Temporibus tenetur laboriosam quisquam cumque similique pariatur repellendus accus Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti possimus in fugit voluptatum aspernatur eligendi? Delectus rem voluptatem soluta ipsum, distinctio magni eaque eligendi molestias libero, repudiandae eos? Expedita. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid corporis molestiae, quisquam laborum odio aspernatur. Voluptate iure eveniet sapiente at officia. Molestiae a animi accusamus asperiores laborum velit nobis adipisci?
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugit rem vel, facilis, recusandae placeat illo, ut et fuga numquam dolores perferendis tempore nobis alias ex obcaecati deleniti omnis asperiores!
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim accusamus quia exercitationem nulla, iure asperiores hic dolores odio qui sapiente, commodi reiciendis adipisci aliquid omnis expedita repudiandae aut ratione.</p>
+            </div>
     </body>
 </html>
