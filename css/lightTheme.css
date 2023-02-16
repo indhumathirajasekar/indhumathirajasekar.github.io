@@ -1,0 +1,16 @@
+/* Custom Color Settings */
+:root{
+    /* --LightColor:#BFC1CC;
+     --DarkColor:#1D2B41;
+     --MainColor:#5082BE;
+     --LightAccent:#7AAADD;
+     --DarkAccent:#3C6696;*/
+     --LightColor:#F6F9F8;
+     --DarkColor:#9A3553;
+     --MainColor:#EF9FA1;
+     --LightAccent:#F1958D;
+     --DarkAccent:#CD7AB3;
+ 
+     --MainBackgroundPattern:url("../images/pexels-skylar-kang-6045298.jpg");
+ }
+ 
