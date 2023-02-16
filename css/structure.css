@@ -26,3 +26,27 @@ li{
 }
 
 /* Table size */
+@media all and (min-width:768px){
+    ul{
+        flex-direction: row;
+    }
+
+}
+
+/* Desktop size */
+@media all and (min-width:1200px){
+   ul{
+    justify-content: center;
+   }
+   nav li a, nav li a:visited
+    {
+        display: inline;
+        background-color: inherit;
+        color: #1D2B41;
+    }
+    li{
+        background-color: inherit;
+        border: none;
+    }
+
+}
