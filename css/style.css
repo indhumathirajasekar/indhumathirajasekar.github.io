@@ -1,0 +1,179 @@
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after{box-sizing:border-box;}a{text-decoration:none; color:inherit; cursor:pointer;}
+button{background-color:transparent; color:inherit; border-width:0; padding:0; cursor:pointer;}
+figure{margin:0;}
+input::-moz-focus-inner {border:0; padding:0; margin:0;}
+ul, ol, dd{margin:0; padding:0; list-style:none;}
+h1, h2, h3, h4, h5, h6{margin:.5em; font-size:inherit; font-weight:inherit;}
+p{margin:0;}
+cite {font-style:normal;}
+fieldset{border-width:0; padding:0; margin:0;}
+
+
+
+/* Custom style*/
+.school, .company{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+body{
+    font-family: 'Inconsolata', monospace;
+    font-size: inherit;
+    background-image: var(--MainBackgroundPattern) ;
+    
+}
+
+header{
+    background-color: var(--DarkColor);
+    color: var(--LightColor);
+    padding: 5%;   
+    background-position: left;
+    transition: all 1s;
+    background-image:none;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+header:hover{
+    background-image: url("../images/RyanSteffesPhotographer.jpg");
+    background-color: none;
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: all 3s;
+    background-blend-mode:luminosity;
+}
+header a{
+    display: inline-block;
+    padding:5px;
+    border-width: 1px;
+    border-style: none;
+
+}
+header a:hover{
+    background-color: var(--DarkAccent);
+    color: var(--LightColor);
+    border-radius: 5px;
+    border-color: var(--LightColor);
+    border-style: solid;
+}
+
+header h1, header h2{
+    filter:drop-shadow(10px 15px 10px var(--LightAccent));
+    /*box-shadow: 15px 15px 100px #FFFFFF;*/
+}
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 1.2em;
+}
+h3{
+    font-size: 1.1em;
+}
+
+main>section{
+    flex-basis:75%;
+    
+    background-color:var(--LightColor);
+    backdrop-filter: blur(22px);
+    border-radius: 2em;
+    margin:10px;
+    box-shadow: 5px 2px 15px #000000;
+}
+aside{
+    background-color: var(--LightAccent);
+    color: var(--LightColor);
+    flex-basis: 25%; 
+    backdrop-filter: blur(10px);
+    border-radius: 2em;
+    margin:10px;
+    
+}
+
+aside h2{
+    color:white;
+    filter:drop-shadow(0px 1px 2px #5a789b);
+    padding:1rem;
+    
+}
+
+aside img{
+    max-width: 30%;
+    margin: .5em 0 .3em 0;
+}
+
+aside img+p{
+    text-align: left;
+    align-self: center;
+    margin-left: 1.5em;
+}
+
+aside li, aside h3{
+    filter:drop-shadow(1px 1px 0px #FFFFFF);
+}
+
+header>h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
+    text-align: center;
+}
+header>h2{
+    text-align: center;
+}
+
+header>nav>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:2rem;
+}
+
+header>nav>ul>li+li{
+    padding-left: 5rem;
+    align-content: center;
+
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    
+}
+main > *{
+    padding:5%;
+}
+
+.multi-col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.multi-col>*
+{
+    flex-basis: 50%;
+    flex-shrink:0;
+    flex-grow: 0;
+    box-sizing: border-box;
+}
+
+.resume>ul{
+    border-color: #3C6696;
+    border-style: inset;
+    border-width: 1px;
+    margin: 2px;
+    padding: 2px;
+}
+.resume>ul>li{
+    margin-top:1em;
+    margin-left: 5em;
+}
+.date_italics{
+    font-style: italic;
+    font-size: .9em;
+}
