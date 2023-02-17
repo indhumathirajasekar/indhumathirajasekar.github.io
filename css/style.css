@@ -28,7 +28,7 @@ body{
 }
 
 header{
-    background-color: var(--DarkColor);
+    background-color: rgb(200, 196, 196);
     color: var(--LightColor);
     padding: 5%;   
     background-position: left;
@@ -176,4 +176,13 @@ main > *{
 .date_italics{
     font-style: italic;
     font-size: .9em;
+}
+#background_video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    postion:
+
+
+
 }
