@@ -1,0 +1,17 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgba(239, 226, 238, 0.555);
+}
+h1 {
+    font-size: 50px;
+    color:rgb(168, 168, 229);
+}
+p{
+    color:rgb(218, 154, 154);
+    font-size:55px;
+}
+ul {
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(174, 218, 218);
+}
