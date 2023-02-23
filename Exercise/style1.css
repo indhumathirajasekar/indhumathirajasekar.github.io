@@ -1,0 +1,40 @@
+header,
+nav,
+section,
+footer {
+    background-color: aliceblue;
+    border-radius: 5px;
+    color: rgba(116, 126, 126, 0.259);
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+header:before;
+nav:before;
+section:before;
+footer:before {
+    content:'*'
+}
+header:after;
+nav:after;
+section:after;
+footer:after {
+    content:'*';
+}
+
+section {
+    display:flex;
+    text-align:center;
+}
+.product {
+    display:grid;
+    color:rgb(225, 174, 174);
+    grid-template-columns:auto auto auto auto;
+}
+.product div {
+    border:2px solid rgb(229, 224, 224);
+    padding:30px;
+    margin:20px;
+}
