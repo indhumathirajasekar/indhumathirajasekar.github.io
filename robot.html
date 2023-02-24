@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+        #boxone {
+            background-color: black;
+            width: 50px;
+            height: 75px;
+        }
+        #leftarm {
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: 5px;
+            left: -15px;
+            transform-origin: top right;
+            transform: rotate(45deg);
+        }
+        #rightarm {
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: 5px;
+            left: -50px;
+            transform-origin: top left;
+            transform: rotate(-45deg);
+        }
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+
+        #parentElement {
+            width: auto;
+            height: auto;
+            position: relative;
+            margin: 20%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parentElement">
+        <div id="boxOne"></div>
+        <div id="leftArm"></div>
+        <div id="rightArm"></div>
+    </div>
+</body>
+</style>
+</head>
+</html>
