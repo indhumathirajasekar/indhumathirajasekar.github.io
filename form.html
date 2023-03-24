@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <form>
+        <ul>
+            <script>
+                function makeEmail() {
+                    var firstName = document.getElementById('firstname').value,
+                        lastname = document.getElementById('lastname').value;
+                    var firstletter = firstName.charAt(0);
+                    var email = firstletter + "." + lastName + "@waketech.edu";
+                    alert(email);
+
+                }
+            </script>
+            <li><label for="first name">First Name</label>
+                <input id="firstname" name="firstname" type="text">
+            </li>
+            <li><label for="last name"> Last name</label>
+                <input id="lastname" name="lastname" type="text">
+            </li>
+            <li><button onclick="makeEmail()">Make Email</button>
+            </li>
+        </ul>
+
+    </form>
+</body>
+
+</html>
