@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+        #boxOne {
+            background-color: black;
+            width: 50px;
+            height: 75px;
+        }
+        #leftArm {
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: 0px;
+            left: -15px;
+            transform-origin: top right;
+            transform: rotate(45deg);
+        }
+        #rightArm {
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: -10px;
+            left: 45px;
+            transform-origin: top right;
+            transform: rotate(-45deg);
+        }
+        #boxHead {
+            position: absolute;
+            width: 50px;
+            height: 55px;
+            border-radius: 100%;
+            background: brown;
+            top: -55px;
+        }
+        #rightLeg {            
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: 72px;
+            left: 34px;
+            transform-origin: top right;
+            transform: rotate(350deg);
+        }
+        #leftLeg { 
+            background-color: red;
+            position: absolute;
+            width: 15px;
+            height: 80px;
+            top: 71px;
+            left: 0px;
+            transform-origin: top left;
+            transform: rotate(14deg);
+        }
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+        #leftEye {
+            background-color: rgb(86, 84, 84);
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: -34px;
+            border-radius: 100%;
+            left: 12px;
+
+        }
+        #rightEye {
+            background-color: rgb(86, 84, 84);
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: -34px;
+            border-radius: 100%;
+            left: 31px;
+
+        }
+        #parentElement {
+            width: auto;
+            height: auto;
+            position: relative;
+            margin: 20%;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parentElement">
+        <div id="boxOne"></div>
+        <div id="leftArm"></div>
+        <div id="rightArm"></div>
+        <div id="boxHead"></div>
+        <div id="rightLeg"></div>
+        <div id="leftLeg"></div>
+        <div id="leftEye"></div>
+        <div id="rightEye"></div>
+    </div>
+</body>
+</head>
+</html>
